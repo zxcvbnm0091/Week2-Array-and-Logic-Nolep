@@ -5,7 +5,9 @@
 function pasanganTerbesar(num) {
   // you can only write your code here!
   let numStr = num.toString();
+
   let highest = numStr[0] + numStr[1];
+  
   for (let i = 0; i < numStr.length - 1; i++) {
     if (numStr[i] + numStr[i + 1] >= highest) {
       highest = numStr[i] + numStr[i + 1];

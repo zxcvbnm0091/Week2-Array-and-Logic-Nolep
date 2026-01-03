@@ -20,7 +20,7 @@ Contoh, 'katak' dibalik tetaplah 'katak'.
 function palindrome(kata) {
   // you can only write your code here!
   let kebalik = [];
-  for (char of kata) {
+  for (const char of kata) {
     kebalik.unshift(char);
   }
   return kebalik.join("") === kata;

@@ -42,7 +42,7 @@ let input = [
 ];
 
 function dataHandling(data) {
-  for (item of data) {
+  for (const item of data) {
     let [id, nama, tempat, tanggal, hobi] = item;
     console.log(`
         Nomor ID : ${id}

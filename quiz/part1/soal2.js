@@ -37,8 +37,8 @@ let months = [
 ];
 function dataHandling2(input) {
   // isi jawaban kamu di sini
-  input.splice(1, 1, `${input[1]}Elsharawy`); // add last name
-  input.splice(2, 1, `Provinsi ${input[2]}`); // add provinsi
+  input[1] += "Elsharawy";
+  input[2] = "Provinsi " + input[2];
   input.splice(-1, 1, "Pria", "SMA International Metro");
 
   console.log(input);

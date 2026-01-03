@@ -12,7 +12,9 @@ function targetTerdekat(arr) {
   let closest = Infinity;
   let idX = -1;
   let idO = -1;
+
   if (!arr.includes("x") || !arr.includes("o")) return 0;
+  
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === "x") {
       idX = i;
